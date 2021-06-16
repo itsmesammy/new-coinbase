@@ -7,26 +7,14 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
-
-jobs:
-  build:
-
-    runs on
-
-    steps
-    - uses
-    - name
-      uses
-      with
+    branches: [ main ]     
+      
+  
+      
       python-version:3.3.0.
     - name
       run
           metrosetup.py
-    - name
-      run
-        # stop the build if there are Python syntax errors or undefined name
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
     
       # env:metrosetup.py
       #   COINBASE_API_KEY: ${{ secrets.COINBASE_API_yWYKX6H2vPEfwmAq }}
