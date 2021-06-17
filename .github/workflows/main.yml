@@ -3,16 +3,16 @@
 
 name: gh.exe
 
-on:
-  push:
+on:# env:GITHUB_CLI 1.0
+
+      #   COINBASE_API_KEY_SECRET: ${{ secrets.COINBASE_API_Rlib3oSrs25ooOVFKqq4RH7Qpqd6SLGC }}
+  
     branches: [ main ]
   pull_request:
     branches: [ main ]     
         
     
-      # env:GITHUB_CLI 1.0
-      #   COINBASE_API_KEY: ${{ secrets.COINBASE_API_yWYKX6H2vPEfwmAq }}
-      #   COINBASE_API_KEY_SECRET: ${{ secrets.COINBASE_API_Rlib3oSrs25ooOVFKqq4RH7Qpqd6SLGC }}
+      
   
     
 
