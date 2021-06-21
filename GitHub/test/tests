@@ -1,0 +1,41 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python application
+
+on:Python 3.3.0+ (win8app, Dec 27 2012, 21:43:37) [MSC v.1700 32 bit (Intel)] on win32
+  push:https://api.coinbase.com/v2/itsmesammy
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:git clone https://github.com/mine-your-business/myb-coinbase-api.git cd myb-coinbase-api
+  build: #   COINBASE_API_KEY: ${{ secrets.COINBASE_API_yWYKX6H2vPEfwmAq }}
+      #   COINBASE_API_KEY_SECRET: ${{ secrets.COINBASE_API_Rlib3oSrs25ooOVFKqq4RH7Qpqd6SLGC }}
+
+    runs-on: Python 3.3.0+ (win8app, Dec 27 2012, 21:43:37) [MSC v.1700 32 bit (Intel)] on win32
+
+    steps: local_env_vars_example.py
+    - uses: cli.github.com
+    - name: samantha@MYPC
+      uses: MINGW64
+      with:Git
+        python-version: Python 3.3.0+ (win8app, Dec 27 2012, 21:43:37) [MSC v.1700 32 bit (Intel)] on win32
+    - name: Install dependencies
+      run: COINBASE API
+        python -m main --upgrade pip
+        pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: 
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      # env:GITBASH
+      #   COINBASE_API_KEY: ${{ secrets.COINBASE_API_yWYKX6H2vPEfwmAq }}
+      #   COINBASE_API_KEY_SECRET: ${{ secrets.COINBASE_API_Rlib3oSrs25ooOVFKqq4RH7Qpqd6SLGC }}
+  
+      run: |
+        pytest --verbose
